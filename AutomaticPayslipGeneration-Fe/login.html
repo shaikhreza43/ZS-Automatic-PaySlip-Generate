@@ -1,0 +1,28 @@
+<section ng-controller="apsgCtrl">
+
+    <div class="row">
+        <div class="col-lg-10 col-md-10 col-sm-10">
+            
+           
+            <form ng-submit="login(formData)">
+
+                <div class="form-group">
+                    <label for="userName"><b>User Name: </b>&nbsp;</label>
+                    <input type="text" class="form-control" placeholder="Enter Your User Name"
+                        ng-model="formData.userName">
+                </div>
+                <div class="form-group">
+                    <label for="password"><b>Password: </b>&nbsp;</label>
+                    <input type="password" class="form-control" placeholder="Input Password"
+                        ng-model="formData.password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" ng-model="formData.checked">
+                    <label class="form-check-label" for="remember">Remember me</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</section>

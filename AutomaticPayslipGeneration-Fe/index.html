@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="zs-apsg">
+
+<head>
+    <style>
+        body {
+            background: url('page_bg_blur02.jpg') no-repeat;
+        }
+
+        form {
+
+            margin-left: 55%;
+            margin-top: 4%;
+        }
+
+        nav ul li a {
+            color: white;
+        }
+
+        nav span {
+            margin-left: 18%;
+        }
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>ZeeSense</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-route.js"></script>
+    <script src="router.js"></script>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-resource/1.5.6/angular-resource.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+
+        <nav class="navbar navbar-expand-sm">
+
+            <a class="navbar-brand text-white" href="/">ZEESENSE</a>
+
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Login</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <div ng-controller="logOutCtrl"><a class="nav-link" href="/logout" ng-click="logout()">Logout</a>
+                    </div>
+                </li>
+            </ul>
+            <SPAN style="color:cornsilk;font-size: 1.5em; font-family: 'Times New Roman', Times, serif;">Welcome
+                to ZeeSense PSG</SPAN>
+        </nav>
+    </header>
+    <hr>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 col-md-9 col-sm-9">
+
+                <div ng-view></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
