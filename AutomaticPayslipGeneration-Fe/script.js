@@ -30,3 +30,19 @@ app.controller("logOutCtrl",function($log,$scope,$http,$location){
     });
   }
 });
+
+app.controller("saveCtrl",function($log,$scope,$http,$location){
+
+  $log.log("Inside saveCtrl controller..");
+  $scope.save= function(signupData){
+    $http.post("http://localhost:6500/apsg/save",signupData).then(
+      function(success){
+        alert("Saved Success!");
+        $location.path("/");
+        console.log("Saved Success",success)
+    },function(failure){
+      alert("Data Couldn\'t be saved.");
+      console,error("Failure Message",failure);
+    });
+  }
+});

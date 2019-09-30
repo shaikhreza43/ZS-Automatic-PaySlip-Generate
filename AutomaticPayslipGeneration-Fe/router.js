@@ -12,6 +12,10 @@ app.config(["$routeProvider","$locationProvider",function($routeProvider,$locati
     }).when('/logout',{
         controller:'logOutCtrl',
         templateUrl:'logout.html'
+    }).when('/signup',{
+        controller:'saveCtrl',
+        templateUrl:'signup.html'
+
     }).otherwise({
         redirectTo : 'index.html'
     });;

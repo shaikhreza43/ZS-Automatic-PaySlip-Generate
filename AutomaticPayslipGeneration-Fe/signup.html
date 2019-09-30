@@ -1,0 +1,30 @@
+<div ng-controller="saveCtrl">
+
+    <form ng-submit="save(signupData)">
+
+        <div class="form-group"> <label for="firstName"><b>First Name:&nbsp;</b></label>
+            <input type="text" class="form-control" ng-model="signupData.firstName" placeholder="Enter Your First Name" required>
+        </div>
+
+        <div class="form-group"><label for="lastName"><b>Last Name:&nbsp;</b></label>
+            <input type="text" class="form-control" ng-model="signupData.lastName" placeholder="Enter Your Last Name" required>
+        </div>
+        <div class="form-group"> <label for="email"><b>Email:&nbsp;</b></label>
+            <input type="email" class="form-control" ng-model="signupData.email" placeholder="Enter Email" required>
+        </div>
+        <div class="form-group"><label for="userName"><b>Enter User Name:&nbsp;</b></label>
+            <input type="text" class="form-control" ng-model="signupData.userName" placeholder="Enter Unique user name">
+        </div>
+        <div class="form-group"> <label for="password"><b>Choose a Password:&nbsp;</b></label>
+            <input type="password" class="form-control" ng-model="signupData.password" placeholder="Enter password" required>
+        </div>
+        <div class="form-group"><label for="cnfPassword"><b>Confirm Password:&nbsp;</b></label>
+            <input type="password" class="form-control" ng-model="signupData.cnfpassword" placeholder="Confirm Password">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+
+
+</div>
